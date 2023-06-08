@@ -1,0 +1,75 @@
+support:
+  fail_support: '//*[@id="ddda"]/div[1]/div/div[2]/div[1]/div/div/div'
+
+check:
+  url_input: '//*[@type="text"]'
+  scan_btn: '//*[@class="el-button el-button--default"]'
+  tips_code: '//div[@role="alert"]/p[contains(text(),"404")]'
+  back_homepage: '//div[text()="返回首页"]'
+
+# 简介
+website_detail_o:
+  website_main: '//*[@class="sslscan-a2"]'
+  website_title: '//*[@class="sslscan-webtilte"]'
+  ip_port: '//*[@class="sslscan-ip"][1]'
+  server: '//*[@class="sslscan-ip"]/span'
+  check_datetime: '//*[@class="sslscan-a6"]'
+  time_consuming: '//*[@class="sslscan-a6"]/span'
+
+# 简介
+website_detail:
+  time_consuming: '//*[@id="iii1"]/div[2]/span'
+  ip_port: '//*[@id="iii1"]/div[1]'
+  check_datetime: '//*[@id="iii1"]/div[2]'
+  flush: '//*[@id="canvassx"]/div[text()="刷新"]'
+
+# 证书信息
+algo_kind:
+  algo_name: '//*[@class="el-tabs__item is-top is-active"]'
+  algo_kind_all: '//*[@class="sslscan-s7"]/div[4]'
+  infos: '//*[@id="pane-0"]/div[1]/div'
+  info_key: '//*[@id="pane-0"]/div[1]/div[{n}]/div'
+  info_value: '//*[@id="pane-0"]/div[1]/div[{n}]/span'
+  trust_color: '//*[@id="pane-0"]/div/div[1]/span[contains(@style,"red")]'
+
+# 证书链信息
+signature_certinfo:
+  certificate_chain_information: '//div[text()="证书链信息"]'
+  infos: '//*[@class="sslscan-a5"]/div'
+  infos_detail: '//*[@class="sslscan-a5"]/div[{n}]/div[2]/div'
+  info_key: '//*[@class="sslscan-a5"]/div[{n}]/div[2]/div[{m}]/div[1]/span[1]'
+  info_value: '//*[@class="sslscan-a5"]/div[{n}]/div[2]/div[{m}]/div[1]/span[2]'
+  site_png: '//img[@src="imgs/sucai8.png"]'
+  ca_png: '//img[@src="imgs/sucai9.png"]'
+  root_png: '//img[@src="imgs/sucai10.png"]'
+
+# 证书信息详细信息
+signature_certinfo_details:
+  click_locator: '//*[@class="sslscan-a7"]'
+  theme_infos: '//*[@class="sslscan-sl3"]/div/div'
+  theme_infos_kv: '//*[@class="sslscan-sl3"]/div/div[{n}]/span[{m}]'
+  issuer_infos: '//*[@id="iii5"]/div/div/div'
+  issuer_infos_kv: '//*[@id="iii5"]/div/div/div[{n}]/span[{m}]'
+  certificate_infos: '//*[@id="iii6"]/div/div/div'
+  certificate_infos_kv: '//*[@id="iii6"]/div/div/div[{n}]/span[{m}]'
+
+# 协议套件 - 协议
+protocol:
+  infos: '//*[@class="sslscan-prop-detail"]/div'
+  protocol_name: '//*[@class="sslscan-prop-detail"]/div[{n}]/span[1]/span'
+  support_or_not: '//*[@class="sslscan-prop-detail"]/div[{n}]/span[2]'
+  SSL3_color: '//*[@class="sslscan-prop-detail"]/div[{n}]/span[2][contains(@style,"red")]'
+
+# 加密套件
+encryption_suite:
+  infos: '//*[@id="iii3"]/div[3]/div[3]/div'
+  protocol_names: '//*[@id="iii3"]/div[3]/div[3]/div[{n}]/span'
+  encryption_names: '//*[@id="iii3"]/div[3]/div[3]/div[{n}]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]'
+  RC4_red_color: '//*[@id="iii3"]/div[3]/div[3]/div[{n}]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1][contains(@style,"red")]'
+
+# 协议详情
+signature_detail:
+  infos: '//*[@id="iii4"]/div[2]/div[1]/div'
+  protocol_name: '//*[@id="iii4"]/div[2]/div[1]/div[{n}]/span[1]'
+  support_or_not: '//*[@id="iii4"]/div[2]/div[1]/div[{n}]/span[2]'
+  RC4_color: '//*[@id="iii4"]/div[2]/div[1]/div[{n}]/span[2][contains(@style,"red")]'
